@@ -236,6 +236,11 @@ img {
         bottom: 40px;
       }
     }
+    // 头部背景
+    .nav-banner {
+      width: 100vw;
+      height: 260px;
+    }
   }
   section {
     padding-top: 40px;
@@ -414,7 +419,7 @@ img {
         display: flex;
         img {
           width: 30vw;
-          height: 25vw;
+          height: 20vw;
         }
         &:hover {
           cursor: pointer;
@@ -480,7 +485,7 @@ img {
         color: inherit;
         font-size: 18px;
         position: relative;
-        left: 26px;
+        left: 10px;
         font-weight: 700;
         &:before {
           content: '';
@@ -489,7 +494,7 @@ img {
           width: 84px;
           height: 20px;
           position: absolute;
-          left: -24px;
+          left: -8px;
           top: 1px;
         }
       }
@@ -598,27 +603,99 @@ img {
         color: $background;
       }
     }
+  }
+}
 
-    //.QR {
-    //  padding-top: 44px;
-    //  display: flex;
-    //  align-items: flex-end;
-    //  flex-direction: column;
-    //  h4 {
-    //    color: $background;
-    //    text-align: center;
-    //    padding-bottom: 10px;
-    //    width: 100px;
-    //  }
-    //  img {
-    //    width: 100px;
-    //  }
-    //  .rights {
-    //    color: $background;
-    //    margin-top: 21px;
-    //  }
-    //}
+.page-wrap {
+  .bread-nav {
+    margin: 0 16px;
+    box-shadow: 0 0 7px -1px rgba(0,0,0,0.45);
+    position: relative;
+    top: -32px;
+    background: white;
+    line-height: 60px;
+    padding: 0 10px;
+    .position {
+      .nav-item {
+        cursor: pointer;
+        font-size: 14px;
+        &:last-child {
+          color: $active;
+        }
+        &:not(:last-child) {
+          &:after {
+            content: '>';
+            padding-left: 5px;
+          }
+        }
+      }
+    }
+    .next {
+      float: right;
+      line-height: 61px;
+      width: 42vw;
+      background: $active;
+      position: absolute;
+      right: 0;
+      top: 0;
+      padding: 0 8px;
+      font-size: 14px;
+
+      .next-title {
+        font-size: 14px;
+        padding-left: 40px;
+        max-width: 110px;
+        @include ellipsis;
+        position: absolute;
+        display: inline-block;
+        cursor: pointer;
+        &:before {
+          content: '';
+          background: url("../img/icon.png") -4px -2px no-repeat;
+          width: 26px;
+          height: 20px;
+          position: absolute;
+          top: 18px;
+          left: 6px;
+        }
+      }
+    }
   }
 
 }
 
+// 新闻页面
+.new-page {
+  padding-top: 0!important;
+   li:first-child {
+       padding: 0!important;
+       .new-item {
+         position: relative;
+         img {
+           width: 100vw;
+           height: 50vw;
+           padding: 0 25px;
+         }
+         .new-content {
+           position: absolute;
+           height: 23vw;
+           bottom: 0;
+           margin: 0 25px;
+           padding: 10px 25px;
+           background: rgba(0, 0, 0, .75);
+           h5 {
+             color: white;
+             @include multiEllipsis(2);
+           }
+           .new-info {
+             margin-top: 0;
+             .time {
+               color: $background;
+             }
+           }
+         }
+
+       }
+
+     }
+}
