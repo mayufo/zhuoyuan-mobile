@@ -5,6 +5,7 @@ $text: #333333;
 $text-light: #666666;
 $background: #999999;
 $line: #cccccc;
+$line-menu: #ebebeb;
 
 // 强制不换行超出文字省略号
 @mixin ellipsis {
@@ -93,7 +94,7 @@ img {
         left: 22px;
         top: 28px;
       }
-      i {
+      .icon-menu {
         position: absolute;
         z-index: 2;
         color: white;
@@ -101,6 +102,84 @@ img {
         top: 28px;
         font-size: 28px;
       }
+      .nav-menu {
+        display: none;
+        width: 100vw;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: white;
+        z-index: 2;
+        .menu-header {
+          padding: 20px;
+          img {
+            width: 50vw;
+          }
+          .close {
+            background: url("../img/close.png") 50% 50% no-repeat;
+            background-size: cover;
+            height: 32px;
+            width: 32px;
+            display: inline-block;
+            right: 20px;
+            position: absolute;
+            top: 20px;
+          }
+        }
+        .menu-list {
+          border-top: 2px solid $line-menu;
+          padding: 0 25px;
+          > li {
+            border-bottom: 2px solid $line-menu;
+          }
+          a {
+            line-height: 60px;
+            text-align: center;
+            .icon-arrow-down {
+              display: none;
+            }
+          }
+          .active {
+            p {
+              color: $active;
+              font-weight: 700;
+            }
+            i {
+              color: $active;
+            }
+          }
+          .child-menu {
+            display: none;
+            > li {
+              text-align: center;
+            }
+            a {
+              color: $active;
+            }
+          }
+        }
+        .menu-footer {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          border-bottom: 2px solid $line-menu;
+          padding-bottom: 23px;
+          a {
+            margin-top: 23px;
+            line-height: 54px;
+            width: 152px;
+            text-align: center;
+            border-radius: 4px;
+            border: 1px solid $text;
+          }
+          .active {
+            border: none;
+            background: $active;
+            color: white;
+          }
+        }
+      }
+
     }
     //幻灯
     .swiper-container {

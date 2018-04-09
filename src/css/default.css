@@ -28,13 +28,72 @@ img {
       width: 180px;
       left: 22px;
       top: 28px; }
-    .index .nav-wrap .nav i {
+    .index .nav-wrap .nav .icon-menu {
       position: absolute;
       z-index: 2;
       color: white;
       right: 22px;
       top: 28px;
       font-size: 28px; }
+    .index .nav-wrap .nav .nav-menu {
+      display: none;
+      width: 100vw;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: white;
+      z-index: 2; }
+      .index .nav-wrap .nav .nav-menu .menu-header {
+        padding: 20px; }
+        .index .nav-wrap .nav .nav-menu .menu-header img {
+          width: 50vw; }
+        .index .nav-wrap .nav .nav-menu .menu-header .close {
+          background: url("../img/close.png") 50% 50% no-repeat;
+          background-size: cover;
+          height: 32px;
+          width: 32px;
+          display: inline-block;
+          right: 20px;
+          position: absolute;
+          top: 20px; }
+      .index .nav-wrap .nav .nav-menu .menu-list {
+        border-top: 2px solid #ebebeb;
+        padding: 0 25px; }
+        .index .nav-wrap .nav .nav-menu .menu-list > li {
+          border-bottom: 2px solid #ebebeb; }
+        .index .nav-wrap .nav .nav-menu .menu-list a {
+          line-height: 60px;
+          text-align: center; }
+          .index .nav-wrap .nav .nav-menu .menu-list a .icon-arrow-down {
+            display: none; }
+        .index .nav-wrap .nav .nav-menu .menu-list .active p {
+          color: #06bf75;
+          font-weight: 700; }
+        .index .nav-wrap .nav .nav-menu .menu-list .active i {
+          color: #06bf75; }
+        .index .nav-wrap .nav .nav-menu .menu-list .child-menu {
+          display: none; }
+          .index .nav-wrap .nav .nav-menu .menu-list .child-menu > li {
+            text-align: center; }
+          .index .nav-wrap .nav .nav-menu .menu-list .child-menu a {
+            color: #06bf75; }
+      .index .nav-wrap .nav .nav-menu .menu-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-bottom: 2px solid #ebebeb;
+        padding-bottom: 23px; }
+        .index .nav-wrap .nav .nav-menu .menu-footer a {
+          margin-top: 23px;
+          line-height: 54px;
+          width: 152px;
+          text-align: center;
+          border-radius: 4px;
+          border: 1px solid #333333; }
+        .index .nav-wrap .nav .nav-menu .menu-footer .active {
+          border: none;
+          background: #06bf75;
+          color: white; }
   .index .nav-wrap .swiper-container {
     width: 100%;
     height: 291px; }
