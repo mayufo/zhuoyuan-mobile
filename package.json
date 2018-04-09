@@ -1,0 +1,21 @@
+{
+  "name": "zhuoyuan-mobile",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w src/scss -o  src/css",
+    "dev": "http-server -c-1 -p 3333",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mayufo/zhuoyuan-mobile.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mayufo/zhuoyuan-mobile/issues"
+  },
+  "homepage": "https://github.com/mayufo/zhuoyuan-mobile#readme"
+}
