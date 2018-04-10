@@ -313,7 +313,8 @@ img {
   margin-bottom: 30px; }
 
 .index .new ul .new-item {
-  display: flex; }
+  display: flex;
+  justify-content: center; }
   .index .new ul .new-item img {
     width: 30vw;
     height: 20vw; }
