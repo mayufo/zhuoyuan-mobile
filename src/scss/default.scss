@@ -359,11 +359,11 @@ img {
         color: white;
       }
       h6 {
-        margin-top: 30px;
         font-size: 18px;
+        margin-bottom: 3vw;
+        margin-top: 6vw;
       }
       p {
-        margin-top: 8px;
         font-size: 16px;
       }
     }
@@ -394,7 +394,7 @@ img {
       p {
         color: white;
         line-height: 28px;
-        padding: 0 30px;
+        width: 80vw;
         @include multiEllipsis(3);
         position: absolute;
         bottom: 100px;
@@ -415,7 +415,6 @@ img {
       }
       .new-item {
         display: flex;
-        justify-content: center;
         img {
           width: 30vw;
           height: 20vw;
@@ -427,11 +426,10 @@ img {
       .new-content {
         margin-left: 14px;
         h5 {
-          padding: 0 0 10px;
           font-size: 16px;
           font-weight: 700;
           @include multiEllipsis(2);
-          max-width: 310px;
+          width: 196px;
         }
         p {
           line-height: 28px;
@@ -691,6 +689,7 @@ img {
            margin: 0 25px;
            padding: 10px 25px;
            background: rgba(0, 0, 0, .75);
+           width: calc(100vw - 50px);
            h5 {
              color: white;
              @include multiEllipsis(2);
