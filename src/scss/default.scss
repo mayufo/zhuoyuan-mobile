@@ -466,15 +466,16 @@ img {
       }
     }
   }
+  // 尾部
   footer {
     margin-top: 20px;
-    height: 470px;
+    height: 480px;
     width: 100vw;
     background-size: cover;
     background: url("../img/footer.jpg") 50% 50%;
     .footer-wrap {
       width: 100vw   ;
-      padding: 45px 25px 24px;
+      padding: 45px 25px 0;
       display: flex;
       flex-direction: column;
     }
@@ -567,6 +568,8 @@ img {
       .map {
         display: flex;
         margin-top: 23px;
+        position: relative;
+        left: 20px;
         li, a {
           color: $background;
         }
@@ -694,8 +697,13 @@ img {
              }
            }
          }
-
        }
-
      }
+}
+
+// 内容页面
+.content-page {
+  .content {
+    padding: 0 20px 30px;
+  }
 }

@@ -367,13 +367,13 @@ img {
 
 .index footer {
   margin-top: 20px;
-  height: 470px;
+  height: 480px;
   width: 100vw;
   background-size: cover;
   background: url("../img/footer.jpg") 50% 50%; }
   .index footer .footer-wrap {
     width: 100vw;
-    padding: 45px 25px 24px;
+    padding: 45px 25px 0;
     display: flex;
     flex-direction: column; }
   .index footer .footer-content {
@@ -443,7 +443,9 @@ img {
         left: -26px; }
     .index footer .footer-content .map {
       display: flex;
-      margin-top: 23px; }
+      margin-top: 23px;
+      position: relative;
+      left: 20px; }
       .index footer .footer-content .map li, .index footer .footer-content .map a {
         color: #999999; }
       .index footer .footer-content .map li + li {
@@ -544,3 +546,6 @@ img {
           margin-top: 0; }
           .new-page li:first-child .new-item .new-content .new-info .time {
             color: #999999; }
+
+.content-page .content {
+  padding: 0 20px 30px; }
