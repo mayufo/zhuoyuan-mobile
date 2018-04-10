@@ -680,12 +680,12 @@ img {
          position: relative;
          img {
            width: 100vw;
-           height: 50vw;
+           height: 55vw;
            padding: 0 25px;
          }
          .new-content {
            position: absolute;
-           height: 23vw;
+           height: 26vw;
            bottom: 0;
            left: 0;
            margin: 0 25px;
@@ -720,6 +720,7 @@ img {
 }
 // 应用页面
 .application-page {
+  padding-top: 0!important;
   ul {
     margin: 0 auto;
     width: 100vw;

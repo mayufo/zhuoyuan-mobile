@@ -528,11 +528,11 @@ img {
       position: relative; }
       .new-page li:first-child .new-item img {
         width: 100vw;
-        height: 50vw;
+        height: 55vw;
         padding: 0 25px; }
       .new-page li:first-child .new-item .new-content {
         position: absolute;
-        height: 23vw;
+        height: 26vw;
         bottom: 0;
         left: 0;
         margin: 0 25px;
@@ -560,37 +560,36 @@ img {
 .content-page .content {
   padding: 0 20px 30px; }
 
-.application-page ul {
-  margin: 0 auto;
-  width: 100vw;
-  display: flex;
-  align-items: center;
-  flex-direction: column; }
-
-.application-page li {
-  margin-bottom: 28px; }
-  .application-page li a {
-    height: 220px;
-    margin: 2px;
-    display: inline-block;
-    position: relative; }
-
-.application-page img {
-  width: 90vw;
-  height: 50vw; }
-
-.application-page .application-item {
-  z-index: 1;
-  bottom: 0;
-  left: 0;
-  align-items: center;
-  flex-direction: column; }
-  .application-page .application-item h6, .application-page .application-item p, .application-page .application-item i {
-    text-align: center;
-    color: #333333; }
-  .application-page .application-item h6 {
-    margin-top: 12px;
-    font-size: 18px; }
-  .application-page .application-item p {
-    margin-top: 8px;
-    font-size: 16px; }
+.application-page {
+  padding-top: 0 !important; }
+  .application-page ul {
+    margin: 0 auto;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column; }
+  .application-page li {
+    margin-bottom: 28px; }
+    .application-page li a {
+      height: 220px;
+      margin: 2px;
+      display: inline-block;
+      position: relative; }
+  .application-page img {
+    width: 90vw;
+    height: 50vw; }
+  .application-page .application-item {
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    align-items: center;
+    flex-direction: column; }
+    .application-page .application-item h6, .application-page .application-item p, .application-page .application-item i {
+      text-align: center;
+      color: #333333; }
+    .application-page .application-item h6 {
+      margin-top: 12px;
+      font-size: 18px; }
+    .application-page .application-item p {
+      margin-top: 8px;
+      font-size: 16px; }
