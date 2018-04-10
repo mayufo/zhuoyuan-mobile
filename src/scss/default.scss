@@ -258,27 +258,27 @@ img {
         margin: 0 17px 42px;
       }
       > li > a {
-        width: 70vw;
-        height: 72vw;
+        width: 274px;
+        height: 288px;
         border: 1px solid $line;
         display: inline-block;
         position: relative;
         border-radius: 2px;
         .icon {
-          width: 70vw;
+          width: 274px;
           height: 132px;
         }
         .icon-item1 {
-          background: url("../img/icon.png") -74px -446px no-repeat;
+          background: url("../img/icon.png") -80px -446px no-repeat;
         }
         .icon-item2 {
-          background: url("../img/icon.png") -390px -446px no-repeat;
+          background: url("../img/icon.png") -397px -446px no-repeat;
         }
         .icon-item3 {
-          background: url("../img/icon.png") -1004px -446px no-repeat;
+          background: url("../img/icon.png") -1012px -446px no-repeat;
         }
         .icon-item4 {
-          background: url("../img/icon.png") -688px -446px no-repeat;
+          background: url("../img/icon.png") -699px -446px no-repeat;
         }
         .info {
           padding: 0 44px 30px;
@@ -391,10 +391,9 @@ img {
       background-size: cover;
       position: relative;
       p {
-        width: 390px;
         color: white;
         line-height: 28px;
-        padding: 0 10vw;
+        padding: 0 30px;
         @include multiEllipsis(3);
         position: absolute;
         bottom: 100px;
@@ -415,6 +414,7 @@ img {
       }
       .new-item {
         display: flex;
+        justify-content: center;
         img {
           width: 30vw;
           height: 20vw;
@@ -493,7 +493,7 @@ img {
           width: 84px;
           height: 20px;
           position: absolute;
-          left: -8px;
+          left: calc(50% - 190px);
           top: 1px;
         }
       }
@@ -501,7 +501,8 @@ img {
       .contact {
         margin: 20px 0 26px 0;
         position: relative;
-        left: 8px;
+        left: calc(50% - 190px);
+
         li {
           color: $background;
           margin-bottom: 10px;
@@ -567,7 +568,7 @@ img {
         display: flex;
         margin-top: 23px;
         position: relative;
-        left: 20px;
+        left: calc(50% - 160px);
         li, a {
           color: $background;
         }

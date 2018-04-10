@@ -174,23 +174,23 @@ img {
   .index .feature ul > li {
     margin: 0 17px 42px; }
   .index .feature ul > li > a {
-    width: 70vw;
-    height: 72vw;
+    width: 274px;
+    height: 288px;
     border: 1px solid #cccccc;
     display: inline-block;
     position: relative;
     border-radius: 2px; }
     .index .feature ul > li > a .icon {
-      width: 70vw;
+      width: 274px;
       height: 132px; }
     .index .feature ul > li > a .icon-item1 {
-      background: url("../img/icon.png") -74px -446px no-repeat; }
+      background: url("../img/icon.png") -80px -446px no-repeat; }
     .index .feature ul > li > a .icon-item2 {
-      background: url("../img/icon.png") -390px -446px no-repeat; }
+      background: url("../img/icon.png") -397px -446px no-repeat; }
     .index .feature ul > li > a .icon-item3 {
-      background: url("../img/icon.png") -1004px -446px no-repeat; }
+      background: url("../img/icon.png") -1012px -446px no-repeat; }
     .index .feature ul > li > a .icon-item4 {
-      background: url("../img/icon.png") -688px -446px no-repeat; }
+      background: url("../img/icon.png") -699px -446px no-repeat; }
     .index .feature ul > li > a .info {
       padding: 0 44px 30px;
       color: inherit; }
@@ -284,10 +284,9 @@ img {
   background-size: cover;
   position: relative; }
   .index .introduction .introduction-content p {
-    width: 390px;
     color: white;
     line-height: 28px;
-    padding: 0 10vw;
+    padding: 0 30px;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     text-overflow: ellipsis;
@@ -313,7 +312,8 @@ img {
   margin-bottom: 30px; }
 
 .index .new ul .new-item {
-  display: flex; }
+  display: flex;
+  justify-content: center; }
   .index .new ul .new-item img {
     width: 30vw;
     height: 20vw; }
@@ -390,12 +390,12 @@ img {
         width: 84px;
         height: 20px;
         position: absolute;
-        left: -8px;
+        left: calc(50% - 190px);
         top: 1px; }
     .index footer .footer-content .contact {
       margin: 20px 0 26px 0;
       position: relative;
-      left: 8px; }
+      left: calc(50% - 190px); }
       .index footer .footer-content .contact li {
         color: #999999;
         margin-bottom: 10px;
@@ -443,7 +443,7 @@ img {
       display: flex;
       margin-top: 23px;
       position: relative;
-      left: 20px; }
+      left: calc(50% - 160px); }
       .index footer .footer-content .map li, .index footer .footer-content .map a {
         color: #999999; }
       .index footer .footer-content .map li + li {
