@@ -174,23 +174,23 @@ img {
   .index .feature ul > li {
     margin: 0 17px 42px; }
   .index .feature ul > li > a {
-    width: 274px;
-    height: 288px;
+    width: 70vw;
+    height: 72vw;
     border: 1px solid #cccccc;
     display: inline-block;
     position: relative;
     border-radius: 2px; }
     .index .feature ul > li > a .icon {
-      width: 274px;
+      width: 70vw;
       height: 132px; }
     .index .feature ul > li > a .icon-item1 {
-      background: url("../img/icon.png") -80px -446px no-repeat; }
+      background: url("../img/icon.png") -74px -446px no-repeat; }
     .index .feature ul > li > a .icon-item2 {
-      background: url("../img/icon.png") -397px -446px no-repeat; }
+      background: url("../img/icon.png") -390px -446px no-repeat; }
     .index .feature ul > li > a .icon-item3 {
-      background: url("../img/icon.png") -1012px -446px no-repeat; }
+      background: url("../img/icon.png") -1004px -446px no-repeat; }
     .index .feature ul > li > a .icon-item4 {
-      background: url("../img/icon.png") -699px -446px no-repeat; }
+      background: url("../img/icon.png") -688px -446px no-repeat; }
     .index .feature ul > li > a .info {
       padding: 0 44px 30px;
       color: inherit; }
@@ -233,26 +233,24 @@ img {
 
 .index .application li {
   margin-bottom: 28px; }
-
-.index .application a {
-  width: 296px;
-  height: 220px;
-  margin: 2px;
-  display: inline-block;
-  position: relative; }
+  .index .application li a {
+    height: 220px;
+    margin: 2px;
+    display: inline-block;
+    position: relative; }
 
 .index .application img {
-  width: 294px;
-  height: 220px; }
+  width: 90vw;
+  height: 50vw; }
 
 .index .application .application-item {
   z-index: 1;
   position: absolute;
-  bottom: 0;
+  bottom: 13px;
   left: 0;
   background: linear-gradient(to bottom, rgba(79, 79, 79, 0) 38%, rgba(69, 69, 69, 0) 41%, rgba(0, 0, 0, 0.22) 61%, rgba(0, 0, 0, 0.65) 100%, rgba(0, 0, 0, 0.65) 101%);
-  width: 294px;
-  height: 110px;
+  width: 90vw;
+  height: 25vw;
   align-items: center;
   justify-content: center;
   flex-direction: column; }
@@ -520,7 +518,9 @@ img {
 .new-page {
   padding-top: 0 !important; }
   .new-page li:first-child {
-    padding: 0 !important; }
+    padding: 0 !important;
+    position: relative;
+    top: -10px; }
     .new-page li:first-child .new-item {
       position: relative; }
       .new-page li:first-child .new-item img {
@@ -547,5 +547,46 @@ img {
           .new-page li:first-child .new-item .new-content .new-info .time {
             color: #999999; }
 
+.content-page .time {
+  text-align: center;
+  position: relative;
+  top: -28px;
+  margin-top: -10px; }
+
 .content-page .content {
   padding: 0 20px 30px; }
+
+.application-page ul {
+  margin: 0 auto;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
+
+.application-page li {
+  margin-bottom: 28px; }
+  .application-page li a {
+    height: 220px;
+    margin: 2px;
+    display: inline-block;
+    position: relative; }
+
+.application-page img {
+  width: 90vw;
+  height: 50vw; }
+
+.application-page .application-item {
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  align-items: center;
+  flex-direction: column; }
+  .application-page .application-item h6, .application-page .application-item p, .application-page .application-item i {
+    text-align: center;
+    color: #333333; }
+  .application-page .application-item h6 {
+    margin-top: 12px;
+    font-size: 18px; }
+  .application-page .application-item p {
+    margin-top: 8px;
+    font-size: 16px; }
