@@ -526,6 +526,7 @@ img {
           }
         }
         .contact-item2 {
+          color: $background;
           &:before {
             content: '';
             background: url("../img/icon.png") -68px -649px no-repeat;
@@ -537,6 +538,7 @@ img {
         }
 
         .contact-item3 {
+          color: $background;
           &:before {
             content: '';
             background: url("../img/icon.png") -68px -675px no-repeat;

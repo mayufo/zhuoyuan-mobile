@@ -414,20 +414,24 @@ img {
         height: 18px;
         position: absolute;
         left: -26px; }
-      .index footer .footer-content .contact .contact-item2:before {
-        content: '';
-        background: url("../img/icon.png") -68px -649px no-repeat;
-        width: 18px;
-        height: 18px;
-        position: absolute;
-        left: -26px; }
-      .index footer .footer-content .contact .contact-item3:before {
-        content: '';
-        background: url("../img/icon.png") -68px -675px no-repeat;
-        width: 18px;
-        height: 18px;
-        position: absolute;
-        left: -26px; }
+      .index footer .footer-content .contact .contact-item2 {
+        color: #999999; }
+        .index footer .footer-content .contact .contact-item2:before {
+          content: '';
+          background: url("../img/icon.png") -68px -649px no-repeat;
+          width: 18px;
+          height: 18px;
+          position: absolute;
+          left: -26px; }
+      .index footer .footer-content .contact .contact-item3 {
+        color: #999999; }
+        .index footer .footer-content .contact .contact-item3:before {
+          content: '';
+          background: url("../img/icon.png") -68px -675px no-repeat;
+          width: 18px;
+          height: 18px;
+          position: absolute;
+          left: -26px; }
       .index footer .footer-content .contact .contact-item4:before {
         content: '';
         background: url("../img/icon.png") -68px -704px no-repeat;
