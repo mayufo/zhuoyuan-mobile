@@ -473,7 +473,7 @@ img {
     background: url("../img/footer.jpg") 50% 50%;
     .footer-wrap {
       width: 100vw   ;
-      padding: 45px 25px 0;
+      padding: 30px 25px 0;
       display: flex;
       flex-direction: column;
     }
@@ -487,6 +487,7 @@ img {
         font-weight: 700;
         position: relative;
         left: 44px;
+        display: inline-block;
         &:before {
           content: '';
           background: url("../img/logo-no-text.png") no-repeat;
