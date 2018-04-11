@@ -406,7 +406,7 @@ img {
   }
   // 新闻
   .new {
-    ul {
+    .new-wrap {
       @include clearfix;
       li {
         width: 100vw;
@@ -672,7 +672,7 @@ img {
 // 新闻页面
 .new-page {
   padding-top: 0!important;
-   li:first-child {
+   .new-wrap li:first-child {
        padding: 0!important;
        position: relative;
        top: -10px;
@@ -722,26 +722,28 @@ img {
 // 应用页面
 .application-page {
   padding-top: 0!important;
-  ul {
+  .application-list {
     margin: 0 auto;
     width: 100vw;
     display: flex;
     align-items: center;
     flex-direction: column;
-  }
-  li {
-    margin-bottom: 28px;
-    a {
-      height: 220px;
-      margin: 2px;
-      display: inline-block;
-      position: relative;
+    li {
+      margin-bottom: 28px;
+      a {
+        height: 220px;
+        margin: 2px;
+        display: inline-block;
+        position: relative;
+      }
+      img {
+        width: 90vw;
+        height: 50vw;
+      }
     }
   }
-  img {
-    width: 90vw;
-    height: 50vw;
-  }
+
+
   .application-item {
     z-index: 1;
     bottom: 0;
@@ -759,6 +761,40 @@ img {
     p {
       margin-top: 8px;
       font-size: 16px;
+    }
+  }
+}
+// 分页
+.paging {
+  display: flex;
+  justify-content: center;
+  > a {
+    display: inline-block;
+    color: $line;
+  }
+  .active {
+    color: $active;
+    cursor: pointer;
+  }
+  .page {
+    display: flex;
+    justify-content: center;
+    li {
+      padding: 0 10px;
+      &:first-child {
+        padding-left: 20px;
+      }
+      &:last-child {
+        padding-right: 20px;
+      }
+    }
+    li a {
+      cursor: pointer;
+      color: $line;
+    }
+    .active a {
+      cursor: auto;
+      color: $text;
     }
   }
 }
