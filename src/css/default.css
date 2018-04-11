@@ -552,11 +552,36 @@ img {
           .new-page .new-wrap li:first-child .new-item .new-content .new-info .time {
             color: #999999; }
 
+.content-page .new-title {
+  color: #333333;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  word-break: break-all;
+  max-height: 70px;
+  font-size: 28px;
+  font-weight: 700;
+  padding: 0 25px;
+  text-align: center; }
+
 .content-page .time {
   text-align: center;
   position: relative;
-  top: -28px;
-  margin-top: -10px; }
+  margin: 33px 0 24px 0;
+  color: #999999; }
+  .content-page .time::after {
+    content: '';
+    display: block;
+    width: 114px;
+    height: 4px;
+    border-radius: 2px;
+    background: #cccccc;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -18px; }
 
 .content-page .content {
   padding: 0 20px 30px; }

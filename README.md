@@ -9,3 +9,6 @@ https://mayufo.github.io/zhuoyuan-mobile/new
 
 应用页面
 https://mayufo.github.io/zhuoyuan-mobile/apply
+
+公司简介
+https://mayufo.github.io/zhuoyuan-mobile/intro

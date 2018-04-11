@@ -709,11 +709,32 @@ img {
 
 // 内容页面
 .content-page {
+  .new-title {
+    color: $text;
+    @include multiEllipsis(2);
+    max-height: 70px;
+    font-size: 28px;
+    font-weight: 700;
+    padding: 0 25px;
+    text-align: center;
+  }
   .time {
     text-align: center;
     position: relative;
-    top: -28px;
-    margin-top: -10px;
+    margin: 33px 0 24px 0;
+    color: $background;
+    &::after {
+      content: '';
+      display: block;
+      width: 114px;
+      height: 4px;
+      border-radius: 2px;
+      background: $line;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: -18px;
+    }
   }
   .content {
     padding: 0 20px 30px;
