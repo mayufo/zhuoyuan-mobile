@@ -608,11 +608,11 @@ img {
     display: flex;
     justify-content: center; }
     .paging .page li {
-      padding: 0 10px; }
+      padding: 0 17px; }
       .paging .page li:first-child {
-        padding-left: 20px; }
+        padding-left: 34px; }
       .paging .page li:last-child {
-        padding-right: 20px; }
+        padding-right: 34px; }
     .paging .page li a {
       cursor: pointer;
       color: #cccccc; }
