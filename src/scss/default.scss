@@ -612,6 +612,7 @@ img {
 }
 
 .page-wrap {
+  padding-top: 0!important;
   .bread-nav {
     margin: 0 16px;
     box-shadow: 0 0 7px -1px rgba(0,0,0,0.45);
@@ -671,7 +672,6 @@ img {
 
 // 新闻页面
 .new-page {
-  padding-top: 0!important;
    .new-wrap li:first-child {
        padding: 0!important;
        position: relative;
@@ -740,7 +740,6 @@ img {
 }
 // 应用页面
 .application-page {
-  padding-top: 0!important;
   .application-list {
     margin: 0 auto;
     width: 100vw;
@@ -783,6 +782,101 @@ img {
     }
   }
 }
+// 招聘页面
+.recruitment-page {
+  .recruitment-list {
+    padding: 0 30px;
+    li {
+      border-bottom: 1px solid $line;
+      padding-bottom: 16px;
+      &:first-child {
+        .recruitment-item-header {
+          margin-top: 0;
+        }
+      }
+    }
+    .recruitment-item-header {
+      margin: 20px 0;
+      display: flex;
+      font-size: 18px;
+      h5 {
+        font-size: 20px;
+        flex-grow: 2;
+        @include ellipsis;
+      }
+
+      .apply {
+        border-radius: 4px;
+        background: $active;
+        padding: 6px 18px 6px 40px;
+        display: inline-block;
+        position: relative;
+        top: -6px;
+        color: white;
+        font-size: 18px;
+        cursor: pointer;
+        &:before {
+          content: '';
+          position: absolute;
+          background: url("../img/icon.png") -1260px -118px no-repeat;
+          height: 20px;
+          width: 20px;
+          top: 9px;
+          left: 14px;
+        }
+      }
+    }
+    .recruitment-content-detail {
+      color: $text;
+      display: none;
+    }
+    .recruitment-content-brief {
+      color: $text-light;
+      @include multiEllipsis(3);
+    }
+
+    .recruitment-item-footer {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+      div {
+        color: $background;
+      }
+      .describe-open {
+        color: $active;
+        position: relative;
+        cursor: pointer;
+        display: none;
+        &:before {
+          content: '';
+          background: url("../img/icon.png") -1180px -118px no-repeat;
+          position: absolute;
+          height: 16px;
+          width: 17px;
+          left: -20px;
+          top: 4px;
+        }
+      }
+      .describe-close {
+        color: $active;
+        position: relative;
+        cursor: pointer;
+        &:before {
+          content: '';
+          background: url("../img/icon.png") -1180px -118px no-repeat;
+          position: absolute;
+          height: 16px;
+          width: 17px;
+          left: -20px;
+          top: 4px;
+          transform: rotate(180deg);
+        }
+      }
+    }
+
+  }
+}
+
 // 分页
 .paging {
   display: flex;

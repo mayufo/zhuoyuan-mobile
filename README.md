@@ -12,3 +12,6 @@ https://mayufo.github.io/zhuoyuan-mobile/apply
 
 公司简介
 https://mayufo.github.io/zhuoyuan-mobile/intro
+
+招聘岗位
+https://mayufo.github.io/zhuoyuan-mobile/recruitment

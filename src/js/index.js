@@ -7,6 +7,8 @@
             this.menuInit()
             this.slideInit()
             this.featureInit()
+            // 招聘初始化
+            this.recruitmentInit()
         },
         slideInit () {
             var swiper = new Swiper('.swiper-container', {
@@ -42,6 +44,20 @@
                     $(e.currentTarget).find('a').toggleClass('active')
                     $(e.currentTarget).find('.child-menu').toggle();
                 }
+            })
+        },
+        recruitmentInit () {
+            $('.recruitment-content-brief').html($('.recruitment-content-detail').html().replace(/<[^>]+>/g, ''))
+            $('.recruitment-list').on('click', '.describe-close ', (e) => {
+                $(e.currentTarget).hide().parent().find('.describe-open').show()
+                $(e.currentTarget).hide().parent().parent().find('.recruitment-content-detail').show()
+                $(e.currentTarget).hide().parent().parent().find('.recruitment-content-brief').hide()
+            })
+            $('.recruitment-list').on('click', '.describe-open ', (e) => {
+                $(e.currentTarget).hide().parent().find('.describe-close').show()
+                $(e.currentTarget).hide().parent().parent().find('.recruitment-content-brief').show()
+                $(e.currentTarget).hide().parent().parent().find('.recruitment-content-detail').hide()
+
             })
         }
 
