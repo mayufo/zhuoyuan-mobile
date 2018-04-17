@@ -63,7 +63,7 @@
             })
             $('.apply').on('change', (e) => {
                 let formData = new FormData()
-                let file = $(e.currentTarget).find('input').prop('files')
+                let file = $(e.currentTarget).find('input')[0].files[0]
                 formData.append('file', file)
                 $.ajax({
                     url: '/upload', // 地址
