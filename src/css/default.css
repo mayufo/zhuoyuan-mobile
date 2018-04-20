@@ -699,6 +699,116 @@ img {
         top: 4px;
         transform: rotate(180deg); }
 
+.development-page .page-content {
+  position: relative; }
+  .development-page .page-content:before {
+    content: '';
+    position: absolute;
+    top: -38px;
+    width: 4px;
+    background: #cccccc;
+    left: 50%;
+    margin-left: -2px;
+    height: 100%; }
+  .development-page .page-content .development-item {
+    clear: both;
+    width: 50%;
+    position: relative; }
+    .development-page .page-content .development-item .development-header {
+      position: relative;
+      margin-top: 3px; }
+    .development-page .page-content .development-item h5, .development-page .page-content .development-item .icon-play {
+      color: #06bf75;
+      font-size: 20px; }
+    .development-page .page-content .development-item .icon-play {
+      position: absolute;
+      top: 1px; }
+    .development-page .page-content .development-item ul {
+      position: relative;
+      top: 0; }
+      .development-page .page-content .development-item ul li {
+        font-size: 14px;
+        line-height: 34px;
+        color: #4e4e4e; }
+    .development-page .page-content .development-item:nth-child(even) {
+      float: left;
+      text-align: right;
+      padding-right: 40px; }
+      .development-page .page-content .development-item:nth-child(even):before {
+        content: '';
+        height: 36px;
+        width: 36px;
+        border-radius: 50%;
+        position: absolute;
+        right: -18px;
+        top: 0;
+        background: #cccccc; }
+      .development-page .page-content .development-item:nth-child(even):after {
+        content: '';
+        height: 22px;
+        width: 22px;
+        border-radius: 50%;
+        position: absolute;
+        top: 7px;
+        right: -11px;
+        background: white; }
+      .development-page .page-content .development-item:nth-child(even) .development-header .icon-play {
+        right: 70px;
+        transform: rotate(180deg);
+        display: inline-block; }
+      .development-page .page-content .development-item:nth-child(even) ul {
+        left: 30px; }
+        .development-page .page-content .development-item:nth-child(even) ul li {
+          max-width: 100px;
+          position: relative; }
+          .development-page .page-content .development-item:nth-child(even) ul li:before {
+            content: "\e654";
+            font-family: "iconfont" !important;
+            font-style: normal;
+            font-size: 40px;
+            position: absolute;
+            right: -32px;
+            top: -2px;
+            color: #999999; }
+    .development-page .page-content .development-item:nth-child(odd) {
+      float: right;
+      text-align: left;
+      padding-left: 40px; }
+      .development-page .page-content .development-item:nth-child(odd):before {
+        content: '';
+        height: 36px;
+        width: 36px;
+        border-radius: 50%;
+        position: absolute;
+        left: -18px;
+        top: 0;
+        background: #cccccc; }
+      .development-page .page-content .development-item:nth-child(odd):after {
+        content: '';
+        height: 22px;
+        width: 22px;
+        border-radius: 50%;
+        position: absolute;
+        top: 7px;
+        left: -11px;
+        background: white; }
+      .development-page .page-content .development-item:nth-child(odd) .development-header .icon-play {
+        left: 70px; }
+      .development-page .page-content .development-item:nth-child(odd) ul {
+        right: -20px; }
+        .development-page .page-content .development-item:nth-child(odd) ul li {
+          position: relative;
+          max-width: 100px; }
+          .development-page .page-content .development-item:nth-child(odd) ul li:before {
+            content: "\e654";
+            font-family: "iconfont" !important;
+            font-style: normal;
+            font-size: 40px;
+            position: absolute;
+            left: -34px;
+            top: -2px;
+            color: #999999; }
+
 .paging {
   display: flex;
   justify-content: center; }

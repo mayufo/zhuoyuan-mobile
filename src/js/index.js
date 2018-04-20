@@ -9,6 +9,8 @@
             this.featureInit()
             // 招聘初始化
             this.recruitmentInit()
+            // 发展
+            this.developmentInit()
         },
         slideInit () {
             var swiper = new Swiper('.swiper-container', {
@@ -92,7 +94,15 @@
                 });
 
             })
-        }
+        },
+        developmentInit () {
+           let developmentItem =  $('.development-page').find('.development-item')
+            let heightAll = 0
+            for (let i = 0; i < developmentItem.length; i++) {
+                heightAll += developmentItem.eq(i).height();
+            }
+            $('.development-page').find('.page-content').css('height', heightAll)
+        },
 
     }
     controll.init()
