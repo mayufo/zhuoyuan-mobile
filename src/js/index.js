@@ -18,7 +18,11 @@
                     renderBullet: function (index, className) {
                         return '<span class="' + className + '"></span>';
                     },
-                }
+                },
+                autoplay: {
+                    delay: 2000,
+                },
+                loop : true
             });
         },
         featureInit () {
