@@ -794,20 +794,19 @@ img {
         background: white; }
       .development-page .page-content .development-item:nth-child(odd) .development-header .icon-play {
         left: 70px; }
-      .development-page .page-content .development-item:nth-child(odd) ul {
-        right: -20px; }
-        .development-page .page-content .development-item:nth-child(odd) ul li {
-          position: relative;
-          max-width: 100px; }
-          .development-page .page-content .development-item:nth-child(odd) ul li:before {
-            content: "\e654";
-            font-family: "iconfont" !important;
-            font-style: normal;
-            font-size: 40px;
-            position: absolute;
-            left: -34px;
-            top: -2px;
-            color: #999999; }
+      .development-page .page-content .development-item:nth-child(odd) ul li {
+        left: 20px;
+        position: relative;
+        max-width: 100px; }
+        .development-page .page-content .development-item:nth-child(odd) ul li:before {
+          content: "\e654";
+          font-family: "iconfont" !important;
+          font-style: normal;
+          font-size: 40px;
+          position: absolute;
+          left: -34px;
+          top: -2px;
+          color: #999999; }
 
 .paging {
   display: flex;
