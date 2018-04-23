@@ -4,7 +4,8 @@
   box-sizing: border-box;
   color: #333333;
   font-size: 16px;
-  font-family: "microsoft yahei"; }
+  font-family: "microsoft yahei";
+  -webkit-overflow-scrolling: touch; }
 
 a {
   text-decoration: none; }
@@ -532,7 +533,7 @@ img {
       .page-wrap .bread-nav .next .next-title {
         font-size: 14px;
         padding-left: 40px;
-        max-width: 110px;
+        max-width: 109px;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;

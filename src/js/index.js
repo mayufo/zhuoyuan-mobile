@@ -42,9 +42,12 @@
 
             $('.icon-menu').on('click', () => {
                 $('.nav-menu').show();
+                $('main').css({'position':'fixed'})
             })
             $('.close').on('click', () => {
                 $('.nav-menu').hide();
+                $('main').css({'position':'static'})
+
             })
             $('.menu-list > li').on('click', (e) => {
                 if ($(e.currentTarget).find('.child-menu').length > 0) {

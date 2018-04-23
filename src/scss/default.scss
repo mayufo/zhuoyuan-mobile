@@ -65,6 +65,7 @@ $line-menu: #ebebeb;
   color: $text;
   font-size: 16px;
   font-family: "microsoft yahei";
+  -webkit-overflow-scrolling: touch;
 }
 
 a {
@@ -680,7 +681,7 @@ img {
       .next-title {
         font-size: 14px;
         padding-left: 40px;
-        max-width: 110px;
+        max-width: 109px;
         @include ellipsis;
         position: absolute;
         display: inline-block;
