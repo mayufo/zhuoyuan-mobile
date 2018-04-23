@@ -4,8 +4,7 @@
   box-sizing: border-box;
   color: #333333;
   font-size: 16px;
-  font-family: "microsoft yahei";
-  -webkit-overflow-scrolling: touch; }
+  font-family: "microsoft yahei"; }
 
 a {
   text-decoration: none; }
@@ -55,7 +54,8 @@ img {
         height: 100vh;
         overflow: scroll; }
       .index .nav-wrap .nav .nav-menu .menu-header {
-        padding: 20px; }
+        padding: 20px;
+        position: relative; }
         .index .nav-wrap .nav .nav-menu .menu-header img {
           width: 50vw; }
         .index .nav-wrap .nav .nav-menu .menu-header .close {
@@ -93,7 +93,7 @@ img {
         flex-direction: column;
         align-items: center;
         border-bottom: 2px solid #ebebeb;
-        padding-bottom: 23px; }
+        padding-bottom: 83px; }
         .index .nav-wrap .nav .nav-menu .menu-footer a {
           margin-top: 23px;
           line-height: 54px;
