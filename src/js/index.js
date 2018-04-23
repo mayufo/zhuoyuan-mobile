@@ -11,6 +11,7 @@
             this.recruitmentInit()
             // 发展
             this.developmentInit()
+            this.scrollInit()
         },
         slideInit () {
             var swiper = new Swiper('.swiper-container', {
@@ -103,6 +104,22 @@
             }
             $('.development-page').find('.page-content').css('height', heightAll)
         },
+        scrollInit() {
+            this.scrollNav()
+            window.onscroll = () => {
+                this.scrollNav()
+            }
+        },
+        scrollNav () {
+            if (window.scrollY > 0) {
+              $('.nav-wrap').addClass('suspension')
+              $('.logo').attr('src', 'src/img/logo-white.png')
+          } else {
+              $('.nav-wrap').removeClass('suspension')
+              $('.logo').attr('src', 'src/img/logo-green.png')
+
+            }
+        }
 
     }
     controll.init()

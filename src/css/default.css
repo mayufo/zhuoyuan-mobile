@@ -22,12 +22,19 @@ img {
     position: absolute;
     padding: 28px 22px 0 22px;
     width: 100vw; }
+    .index .nav-wrap .nav:before, .index .nav-wrap .nav:after {
+      content: " ";
+      display: table; }
+    .index .nav-wrap .nav:after {
+      clear: both; }
     .index .nav-wrap .nav .logo {
       position: absolute;
       z-index: 2;
       width: 180px;
       left: 22px;
       top: 28px; }
+    .index .nav-wrap .nav .logo-white {
+      display: none; }
     .index .nav-wrap .nav .icon-menu {
       position: absolute;
       z-index: 2;
@@ -144,6 +151,16 @@ img {
   .index .nav-wrap .nav-banner {
     width: 100vw;
     height: 260px; }
+
+.index .suspension .nav {
+  position: fixed;
+  z-index: 2;
+  background: #06bf75;
+  height: 60px; }
+  .index .suspension .nav .logo {
+    top: 18px; }
+  .index .suspension .nav .icon-menu {
+    top: 18px; }
 
 .index section {
   padding-top: 40px; }
@@ -487,7 +504,15 @@ img {
       cursor: pointer;
       font-size: 14px; }
       .page-wrap .bread-nav .position .nav-item:last-child {
-        color: #06bf75; }
+        color: #06bf75;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 56px;
+        display: inline-block;
+        vertical-align: top;
+        position: relative;
+        top: 2px; }
       .page-wrap .bread-nav .position .nav-item:not(:last-child):after {
         content: '>';
         padding-left: 2px; }

@@ -84,6 +84,7 @@ img {
     width: 100vw;
     position: relative;
     .nav {
+      @include clearfix;
       position: absolute;
       padding: 28px 22px 0 22px;
       width: 100vw;
@@ -93,6 +94,9 @@ img {
         width: 180px;
         left: 22px;
         top: 28px;
+      }
+      .logo-white {
+        display: none;
       }
       .icon-menu {
         position: absolute;
@@ -242,12 +246,28 @@ img {
       height: 260px;
     }
   }
+  .suspension {
+    .nav {
+      position: fixed;
+      z-index: 2;
+      background: $active;
+      height: 60px;
+      .logo {
+        top: 18px;
+      }
+      .icon-menu {
+        top: 18px;
+      }
+    }
+
+  }
   section {
     padding-top: 40px;
   }
   section h4 {
     @include header(74px)
   }
+
   // 特征
   .feature {
     ul {
@@ -627,6 +647,12 @@ img {
         font-size: 14px;
         &:last-child {
           color: $active;
+          @include ellipsis;
+          max-width: 56px;
+          display: inline-block;
+          vertical-align: top;
+          position: relative;
+          top: 2px;
         }
         &:not(:last-child) {
           &:after {
