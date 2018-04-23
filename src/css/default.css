@@ -50,6 +50,9 @@ img {
       left: 0;
       background: white;
       z-index: 2; }
+      .index .nav-wrap .nav .nav-menu .nav-menu-scroll {
+        height: 100vh;
+        overflow: hidden; }
       .index .nav-wrap .nav .nav-menu .menu-header {
         padding: 20px; }
         .index .nav-wrap .nav .nav-menu .menu-header img {

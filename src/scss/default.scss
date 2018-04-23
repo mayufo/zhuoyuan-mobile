@@ -114,6 +114,10 @@ img {
         left: 0;
         background: white;
         z-index: 2;
+        .nav-menu-scroll {
+          height: 100vh;
+          overflow: hidden;
+        }
         .menu-header {
           padding: 20px;
           img {
