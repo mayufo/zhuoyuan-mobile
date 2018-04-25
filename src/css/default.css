@@ -319,7 +319,8 @@ img {
     bottom: 100px;
     left: 50%;
     transform: translateX(-50%);
-    text-align: center; }
+    text-align: center;
+    max-height: 84px; }
 
 .index .new .new-wrap:before, .index .new .new-wrap:after {
   content: " ";
