@@ -919,6 +919,7 @@ img {
 
   }
 }
+//发展页面
 .development-page {
 
   .page-content {
@@ -1060,6 +1061,43 @@ img {
           }
         }
       }
+    }
+  }
+}
+.culture-page {
+  ul {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    > li {
+      max-width: 220px;
+      text-align: center;
+      width: 168px;
+      margin: 0 auto 40px;
+      h5 {
+        color: white;
+        font-size: 38px;
+        padding-top: 35px;
+        padding-bottom: 98px;
+      }
+      p {
+        width: 220px;
+        margin-left: -26px;
+        font-size: 18px;
+        line-height: 35px;
+      }
+    }
+    .culture-item1 {
+      background: url("../img/company-culture.jpg") no-repeat;
+    }
+    .culture-item2 {
+      background: url("../img/company-culture.jpg") -303px 0 no-repeat;
+    }
+    .culture-item3 {
+      background: url("../img/company-culture.jpg") -589px 0 no-repeat;
+    }
+    .culture-item4 {
+      background: url("../img/company-culture.jpg") -874px 0 no-repeat;
     }
   }
 }

@@ -838,6 +838,34 @@ img {
           top: -2px;
           color: #999999; }
 
+.culture-page ul {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column; }
+  .culture-page ul > li {
+    max-width: 220px;
+    text-align: center;
+    width: 168px;
+    margin: 0 auto 40px; }
+    .culture-page ul > li h5 {
+      color: white;
+      font-size: 38px;
+      padding-top: 35px;
+      padding-bottom: 98px; }
+    .culture-page ul > li p {
+      width: 220px;
+      margin-left: -26px;
+      font-size: 18px;
+      line-height: 35px; }
+  .culture-page ul .culture-item1 {
+    background: url("../img/company-culture.jpg") no-repeat; }
+  .culture-page ul .culture-item2 {
+    background: url("../img/company-culture.jpg") -303px 0 no-repeat; }
+  .culture-page ul .culture-item3 {
+    background: url("../img/company-culture.jpg") -589px 0 no-repeat; }
+  .culture-page ul .culture-item4 {
+    background: url("../img/company-culture.jpg") -874px 0 no-repeat; }
+
 .paging {
   display: flex;
   justify-content: center; }
