@@ -468,7 +468,8 @@ img {
       display: flex;
       margin-top: 23px;
       position: relative;
-      left: calc(50% - 160px); }
+      left: calc(50% - 160px);
+      width: 320px; }
       .index footer .footer-content .map li, .index footer .footer-content .map a {
         color: #999999; }
       .index footer .footer-content .map li + li {
