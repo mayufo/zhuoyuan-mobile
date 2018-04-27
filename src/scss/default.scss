@@ -1120,11 +1120,10 @@ img {
   }
   .product-info {
     background-size: contain;
-    margin: 0 auto;
+    margin: 0 auto 60px;
     position: relative;
     display: flex;
     flex-direction: column;
-    margin-bottom: 60px;
     li {
       margin: 28px auto 0;
       width: 288px;
@@ -1149,6 +1148,37 @@ img {
       background-size: cover;
     }
 
+  }
+  .product-other {
+    background-size: contain;
+    margin: 0 auto 60px;
+    display: flex;
+    flex-direction: column;
+    li {
+      width: 288px;
+      height: 250px;
+      margin: 0 auto 30px;
+      position: relative;
+      //text-align: center;
+      img {
+        width: 288px;
+        height: 250px;
+        z-index: -1;
+        position: absolute;
+      }
+      p {
+        position: absolute;
+        top: 150px;
+        color: white;
+        font-size: 24px;
+        @include multiEllipsis(2);
+        width: 235px;
+        height: 66px;
+        text-align: center;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
   }
 }
 // 分页

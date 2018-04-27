@@ -881,11 +881,10 @@ img {
 
 .product-page .product-info {
   background-size: contain;
-  margin: 0 auto;
+  margin: 0 auto 60px;
   position: relative;
   display: flex;
-  flex-direction: column;
-  margin-bottom: 60px; }
+  flex-direction: column; }
   .product-page .product-info li {
     margin: 28px auto 0;
     width: 288px;
@@ -909,6 +908,38 @@ img {
   .product-page .product-info .life {
     background: url("../img/product.png") -648px 0 no-repeat;
     background-size: cover; }
+
+.product-page .product-other {
+  background-size: contain;
+  margin: 0 auto 60px;
+  display: flex;
+  flex-direction: column; }
+  .product-page .product-other li {
+    width: 288px;
+    height: 250px;
+    margin: 0 auto 30px;
+    position: relative; }
+    .product-page .product-other li img {
+      width: 288px;
+      height: 250px;
+      z-index: -1;
+      position: absolute; }
+    .product-page .product-other li p {
+      position: absolute;
+      top: 150px;
+      color: white;
+      font-size: 24px;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      text-overflow: ellipsis;
+      -webkit-line-clamp: 2;
+      overflow: hidden;
+      word-break: break-all;
+      width: 235px;
+      height: 66px;
+      text-align: center;
+      left: 50%;
+      transform: translateX(-50%); }
 
 .paging {
   display: flex;
