@@ -867,6 +867,49 @@ img {
   .culture-page ul .culture-item4 {
     background: url("../img/company-culture.jpg") -874px 0 no-repeat; }
 
+.product-page .product-content {
+  border-radius: 6px;
+  border: 6px solid #06bf75;
+  padding: 20px 30px;
+  width: 80%;
+  margin: 0 auto; }
+  .product-page .product-content .product-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 28px; }
+
+.product-page .product-info {
+  background-size: contain;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 60px; }
+  .product-page .product-info li {
+    margin: 28px auto 0;
+    width: 288px;
+    height: 250px;
+    text-align: center;
+    background: url("../img/product.png") no-repeat;
+    background-size: cover;
+    padding: 160px 20px 0 20px; }
+    .product-page .product-info li p {
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      text-overflow: ellipsis;
+      -webkit-line-clamp: 2;
+      overflow: hidden;
+      word-break: break-all;
+      color: white;
+      font-size: 24px; }
+  .product-page .product-info .hot {
+    background: url("../img/product.png") -325px 0 no-repeat;
+    background-size: cover; }
+  .product-page .product-info .life {
+    background: url("../img/product.png") -648px 0 no-repeat;
+    background-size: cover; }
+
 .paging {
   display: flex;
   justify-content: center; }

@@ -1065,6 +1065,7 @@ img {
     }
   }
 }
+// 公司文化
 .culture-page {
   ul {
     margin: 0 auto;
@@ -1100,6 +1101,54 @@ img {
     .culture-item4 {
       background: url("../img/company-culture.jpg") -874px 0 no-repeat;
     }
+  }
+}
+// 公司简介
+.product-page {
+  .product-content {
+    border-radius: 6px;
+    border: 6px solid #06bf75;
+    padding: 20px 30px;
+    width: 80%;
+    margin: 0 auto;
+    .product-title {
+      text-align: center;
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 28px;
+    }
+  }
+  .product-info {
+    background-size: contain;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+    li {
+      margin: 28px auto 0;
+      width: 288px;
+      height: 250px;
+      text-align: center;
+
+      background: url("../img/product.png") no-repeat;
+      background-size: cover;
+      padding: 160px 20px 0 20px;
+      p {
+        @include multiEllipsis(2);
+        color: white;
+        font-size: 24px;
+      }
+    }
+    .hot {
+      background: url("../img/product.png") -325px 0 no-repeat;
+      background-size: cover;
+    }
+    .life {
+      background: url("../img/product.png") -648px 0 no-repeat;
+      background-size: cover;
+    }
+
   }
 }
 // 分页
