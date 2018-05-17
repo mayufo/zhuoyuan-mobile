@@ -37,7 +37,7 @@ $line-menu: #ebebeb;
 
 @mixin header ($paddingBottom) {
   color: $active;
-  font-size: 28px;
+  font-size: 16px;
   font-weight: 700;
   text-align: center;
   position: relative;
@@ -52,7 +52,7 @@ $line-menu: #ebebeb;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: 56px;
+    top: 31px;
   }
 }
 
@@ -120,7 +120,7 @@ img {
           overflow: scroll;
         }
         .menu-header {
-          padding: 20px;
+          padding: 20px 20px 10px;
           position: relative;
           img {
             width: 50vw;
@@ -128,8 +128,8 @@ img {
           .close {
             background: url("../img/close.png") 50% 50% no-repeat;
             background-size: cover;
-            height: 32px;
-            width: 32px;
+            height: 24px;
+            width: 24px;
             display: inline-block;
             right: 20px;
             position: absolute;
@@ -138,12 +138,12 @@ img {
         }
         .menu-list {
           border-top: 2px solid $line-menu;
-          padding: 0 25px;
+          padding: 0 16px;
           > li {
             border-bottom: 2px solid $line-menu;
           }
           a {
-            line-height: 60px;
+            line-height: 40px;
             text-align: center;
             .icon-arrow-down {
               display: none;
@@ -172,12 +172,11 @@ img {
           display: flex;
           flex-direction: column;
           align-items: center;
-          border-bottom: 2px solid $line-menu;
           padding-bottom: 83px;
           a {
-            margin-top: 23px;
-            line-height: 54px;
-            width: 152px;
+            margin-top: 16px;
+            line-height: 36px;
+            width: 100px;
             text-align: center;
             border-radius: 4px;
             border: 1px solid $text;
@@ -194,7 +193,7 @@ img {
     //幻灯
     .swiper-container {
       width: 100%;
-      height: 291px;
+      height: 194px;
       .swiper-slide {
         text-align: center;
         font-size: 18px;
@@ -230,7 +229,7 @@ img {
         border-radius: 2px;
         z-index: 1;
         position: relative;
-        top: -1px;
+        top: -2px;
       }
       .swiper-pagination-bullet-active {
         color: #fff;
@@ -241,15 +240,15 @@ img {
         width: auto;
         transform: translateX(-50%);
         background: #686b6e;
-        padding: 5px;
+        padding: 0 5px;
         border-radius: 4px;
-        bottom: 40px;
+        bottom: 12px;
       }
     }
     // 头部背景
     .nav-banner {
       width: 100vw;
-      height: 260px;
+      height: 172px;
     }
   }
   .suspension {
@@ -268,10 +267,10 @@ img {
 
   }
   section {
-    padding-top: 40px;
+    padding-top: 28px;
   }
   section h4 {
-    @include header(74px)
+    @include header(40px)
   }
 
   // 特征
@@ -281,11 +280,11 @@ img {
       flex-direction: column;
       align-items: center;
       > li {
-        margin: 0 17px 42px;
+        margin: 0 17px 27px;
       }
       > li > a {
-        width: 274px;
-        height: 288px;
+        width: 280px;
+        height: 292px;
         border: 1px solid $line;
         display: inline-block;
         position: relative;
@@ -295,22 +294,22 @@ img {
           height: 132px;
         }
         .icon-item1 {
-          background: url("../img/icon.png") -80px -446px no-repeat;
+          background: url("../img/icon.png") -80px -452px no-repeat;
         }
         .icon-item2 {
-          background: url("../img/icon.png") -397px -446px no-repeat;
+          background: url("../img/icon.png") -397px -452px no-repeat;
         }
         .icon-item3 {
-          background: url("../img/icon.png") -1012px -446px no-repeat;
+          background: url("../img/icon.png") -1012px -452px no-repeat;
         }
         .icon-item4 {
-          background: url("../img/icon.png") -699px -446px no-repeat;
+          background: url("../img/icon.png") -699px -452px no-repeat;
         }
         .info {
-          padding: 0 44px 30px;
+          padding: 5px 44px 30px;
           color: inherit;
           h5 {
-            font-size: 20px;
+            font-size: 18px;
             text-align: center;
             padding-top: 8px;
             color: inherit;
@@ -320,6 +319,7 @@ img {
             text-align: center;
             line-height: 25px;
             color: inherit;
+            font-size: 14px;
             @include multiEllipsis(3);
           }
         }
@@ -358,16 +358,17 @@ img {
     li {
       margin-bottom: 28px;
       a {
-        width: 90vw;
-        height: 50vw;
+        width: 304px;
+        height: 232px;
+
         margin: 2px;
         display: inline-block;
         position: relative;
       }
     }
     img {
-      width: 90vw;
-      height: 50vw;
+      width: 304px;
+      height: 232px;
     }
     .application-item {
       z-index: 1;
@@ -375,8 +376,9 @@ img {
       bottom: 0;
       left: 0;
       background: linear-gradient(to bottom, rgba(79,79,79,0) 38%,rgba(69,69,69,0) 41%,rgba(0,0,0,0.22) 61%,rgba(0,0,0,0.65) 100%,rgba(0,0,0,0.65) 101%);
-      width: 90vw;
-      height: 25vw;
+      width: 304px;
+
+      height: 50vw;
       align-items: center;
       justify-content: center;
       flex-direction: column;
@@ -385,12 +387,13 @@ img {
         color: white;
       }
       h6 {
-        font-size: 18px;
+        font-size: 16px;
         margin-bottom: 3vw;
-        margin-top: 6vw;
+        margin-top: 30vw;
       }
       p {
-        font-size: 16px;
+        font-size: 14px;
+        font-weight: 600;
       }
     }
     .active > a {
@@ -411,23 +414,25 @@ img {
   }
   // 简介
   .introduction {
+    margin-bottom: -36px;
     .introduction-content {
-      background: url("../img/introduction.jpg") 50% 50% no-repeat;
+      background: url("../img/introduction.jpg") 50% -36px no-repeat;
       width: 100vw;
-      height: 387px;
+      height: 260px;
       background-size: cover;
       position: relative;
       p {
         color: white;
-        line-height: 28px;
+        line-height: 24px;
         width: 80vw;
         @include multiEllipsis(3);
         position: absolute;
-        bottom: 100px;
+        bottom: 70px;
         left: 50%;
         transform: translateX(-50%);
         text-align: center;
         max-height: 84px;
+        font-size: 14px;
       }
     }
   }
@@ -437,27 +442,28 @@ img {
       @include clearfix;
       li {
         width: 100vw;
-        padding: 0 25px;
-        margin-bottom: 30px;
+        padding: 0 16px;
+        margin-bottom: 44px;
       }
       .new-item {
         display: flex;
         justify-content: center;
         img {
-          width: 30vw;
-          height: 20vw;
+          width: 116px;
+          height: 84px;
         }
         &:hover {
           cursor: pointer;
         }
       }
       .new-content {
-        margin-left: 14px;
+        margin-left: 10px;
         h5 {
           font-size: 16px;
           font-weight: 700;
           @include multiEllipsis(2);
           width: 196px;
+          line-height: 21px;
         }
         p {
           line-height: 28px;
@@ -494,7 +500,6 @@ img {
   // 尾部
   footer {
     margin-top: 20px;
-    height: 480px;
     width: 100vw;
     background-size: cover;
     background: url("../img/footer.jpg") 50% 50%;
@@ -509,7 +514,7 @@ img {
       text-align: center;
       .footer-logo {
         color: inherit;
-        font-size: 18px;
+        font-size: 16px;
         text-align: center;
         font-weight: 700;
         position: relative;
@@ -537,7 +542,8 @@ img {
           width: 280px;
           color: $background;
           margin-bottom: 10px;
-          font-size: 14px;
+          font-size: 12px;
+          line-height: 26px;
           position: relative;
           left: 18px;
           text-align: left;
@@ -550,6 +556,7 @@ img {
             height: 18px;
             position: absolute;
             left: -26px;
+            top: 4px;
           }
         }
         .contact-item2 {
@@ -560,6 +567,7 @@ img {
             height: 18px;
             position: absolute;
             left: -26px;
+            top: 4px;
           }
         }
 
@@ -571,6 +579,7 @@ img {
             height: 18px;
             position: absolute;
             left: -26px;
+            top: 4px;
           }
         }
         .contact-item4 {
@@ -581,6 +590,7 @@ img {
             height: 18px;
             position: absolute;
             left: -26px;
+            top: 4px;
           }
         }
         .contact-item5 {
@@ -591,12 +601,13 @@ img {
             height: 18px;
             position: absolute;
             left: -26px;
+            top: 4px;
           }
         }
       }
       .map {
         display: flex;
-        margin-top: 23px;
+        margin-top: 30px;
         position: relative;
         left: calc(50% - 160px);
         width: 320px;
@@ -629,11 +640,18 @@ img {
         h4 {
           color: $background;
           margin-bottom: 10px;
+          font-size: 14px;
+        }
+        img {
+          width: 84px;
+          height: 84px;
         }
       }
       .rights {
-        margin-top: 10px;
+        margin: 10px 0 18px;
         color: $background;
+        font-size: 14px;
+
       }
     }
   }
@@ -642,17 +660,17 @@ img {
 .page-wrap {
   padding-top: 0!important;
   .bread-nav {
-    margin: 0 16px;
     box-shadow: 0 0 7px -1px rgba(0,0,0,0.45);
     position: relative;
     top: -32px;
     background: white;
     line-height: 60px;
     padding: 0 10px;
+    margin:0 16px -6px;
     .position {
       .nav-item {
         cursor: pointer;
-        font-size: 14px;
+        font-size: 12px;
         &:last-child {
           color: $active;
           @include ellipsis;
@@ -679,10 +697,10 @@ img {
       right: 0;
       top: 0;
       padding: 0 8px;
-      font-size: 14px;
+      font-size: 12px;
 
       .next-title {
-        font-size: 14px;
+        font-size: 12px;
         padding-left: 40px;
         max-width: 109px;
         @include ellipsis;
@@ -706,6 +724,9 @@ img {
 
 // 新闻页面
 .new-page {
+  h4 {
+   padding-bottom: 46px !important;
+  }
    .new-wrap li:first-child {
        padding: 0!important;
        position: relative;
@@ -715,20 +736,22 @@ img {
          img {
            width: 100vw;
            height: 55vw;
-           padding: 0 25px;
+           padding: 0 20px;
          }
          .new-content {
            position: absolute;
            height: 26vw;
            bottom: 0;
            left: 0;
-           margin: 0 25px;
+           margin: 0 20px;
            padding: 10px 25px;
            background: rgba(0, 0, 0, .75);
            width: calc(100vw - 50px);
            h5 {
              color: white;
              @include multiEllipsis(2);
+             font-size: 16px;
+             line-height: 21px;
            }
            .new-info {
              margin-top: 0;
@@ -781,7 +804,7 @@ img {
     align-items: center;
     flex-direction: column;
     li {
-      margin-bottom: 28px;
+      margin-bottom: 54px;
       a {
         height: 220px;
         margin: 2px;
@@ -789,8 +812,8 @@ img {
         position: relative;
       }
       img {
-        width: 90vw;
-        height: 50vw;
+        width: 320px;
+        height: 214px;
       }
     }
   }
@@ -807,19 +830,19 @@ img {
       color: $text;
     }
     h6 {
-      margin-top: 12px;
-      font-size: 18px;
+      margin-top: 18px;
+      font-size: 16px;
     }
     p {
       margin-top: 8px;
-      font-size: 16px;
+      font-size: 14px;
     }
   }
 }
 // 招聘页面
 .recruitment-page {
   .recruitment-list {
-    padding: 0 30px;
+    padding: 0 28px 50px;
     li {
       border-bottom: 1px solid $line;
       padding-bottom: 16px;
@@ -830,11 +853,11 @@ img {
       }
     }
     .recruitment-item-header {
-      margin: 20px 0;
+      margin: 51px 0 20px;
       display: flex;
       font-size: 18px;
       h5 {
-        font-size: 20px;
+        font-size: 16px;
         flex-grow: 2;
         @include ellipsis;
       }
@@ -847,7 +870,7 @@ img {
         position: relative;
         top: -6px;
         color: white;
-        font-size: 18px;
+        font-size: 14px;
         cursor: pointer;
         overflow: hidden;
         input {
@@ -865,7 +888,7 @@ img {
           background: url("../img/icon.png") -1260px -118px no-repeat;
           height: 20px;
           width: 20px;
-          top: 9px;
+          top: 7px;
           left: 14px;
         }
       }
@@ -882,7 +905,7 @@ img {
     .recruitment-item-footer {
       display: flex;
       justify-content: space-between;
-      margin-top: 20px;
+      margin-top: 26px;
       div {
         color: $background;
       }
