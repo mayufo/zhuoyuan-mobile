@@ -359,7 +359,8 @@ img {
     overflow: hidden;
     word-break: break-all;
     width: 196px;
-    line-height: 21px; }
+    line-height: 21px;
+    height: 42px; }
   .index .new .new-wrap .new-content p {
     line-height: 28px;
     color: #666666;
@@ -596,7 +597,8 @@ img {
         overflow: hidden;
         word-break: break-all;
         font-size: 16px;
-        line-height: 21px; }
+        line-height: 21px;
+        height: 42px; }
       .new-page .new-wrap li:first-child .new-item .new-content .new-info {
         margin-top: 0; }
         .new-page .new-wrap li:first-child .new-item .new-content .new-info .time {
